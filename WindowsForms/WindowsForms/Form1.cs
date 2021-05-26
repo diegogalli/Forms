@@ -102,18 +102,18 @@ namespace WindowsForms
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-
-            //float b = Convert.ToInt32(textBox2.Text);
+            string a = textBox1.Text;
+            string b = textBox2.Text;
             //float res = a / b;
             //MessageBox.Show(Convert.ToString(res));
-            float a = Convert.ToInt32(textBox1.Text);
-            if (a >= 18)
+            
+            if (a == b)
             {
-                MessageBox.Show("Pode tirar a CNH");
+                MessageBox.Show("Iguais");
             }
             else
             {
-                MessageBox.Show("Espera aí né jovem!");
+                MessageBox.Show("Diferentes");
             }
         
         }

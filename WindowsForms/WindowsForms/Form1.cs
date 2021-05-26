@@ -120,9 +120,11 @@ namespace WindowsForms
         private void button1_Click_2(object sender, EventArgs e)
         {
             float numero = Convert.ToInt32(textBox1.Text);
-            for (int i = 1; i <= numero; i++)
+            float i = Convert.ToInt32(0);
+            while(i <= numero)
             {
                 listView1.Items.Add("Linha - " + Convert.ToString(i));
+                i = i + 2;
                 listView1.Items.Add("");
             }
             label1.Text = Convert.ToString(listView1.Items.Count / 2);

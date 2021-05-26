@@ -23,10 +23,15 @@ namespace WindowsForms
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        {           
-            String Mensagem;
-            Mensagem = "Bem vindo DG Informática";
-            label1.Text = Mensagem;
+        {
+            //String Mensagem;
+            //Mensagem = "Bem vindo DG Informática";
+            //label1.Text = Mensagem;
+
+            int hora = DateTime.Now.Hour;
+            int minuto = DateTime.Now.Minute;
+
+            label1.Text = hora + ":" + minuto;
         }
     }
 }

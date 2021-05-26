@@ -58,27 +58,45 @@ namespace WindowsForms
             //listView1.Items.Add("");
             //listView1.Items.Add(idade);
             //listView1.Items.Add("");
+
+            int hora = DateTime.Now.Hour;
+            int minuto = DateTime.Now.Minute;
+
+            label1.Text = hora + ":" + minuto;
+            if (hora < 12)
+            {
+                label2.Text = "Bom dia";
+            }
+            else if (hora >= 12 && hora < 18)
+            {
+                label2.Text = "Boa tarde";
+            }
+            else if (hora >= 18)
+            {
+                label2.Text = "Boa noite";
+            }
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            float a = Convert.ToInt32(textBox1.Text);
-            float b = Convert.ToInt32(textBox2.Text);
-            float soma = a + b;
-            float sub = a - b;
-            float prod = a * b;
-            float div = a / b;
-            float media = (a + b) / 2;
-            listView1.Items.Add("Soma: " + Convert.ToString(soma));
-            listView1.Items.Add("");
-            listView1.Items.Add("Subtração: " + Convert.ToString(sub));
-            listView1.Items.Add("");
-            listView1.Items.Add("Produto: " + Convert.ToString(prod));
-            listView1.Items.Add("");
-            listView1.Items.Add("Divisão: " + Convert.ToString(div));
-            listView1.Items.Add("");
-            listView1.Items.Add("Média: " + Convert.ToString(media));
-            listView1.Items.Add("");
+            //float a = Convert.ToInt32(textBox1.Text);
+            //float b = Convert.ToInt32(textBox2.Text);
+            //float soma = a + b;
+            //float sub = a - b;
+            //float prod = a * b;
+            //float div = a / b;
+            //float media = (a + b) / 2;
+            //listView1.Items.Add("Soma: " + Convert.ToString(soma));
+            //listView1.Items.Add("");
+            //listView1.Items.Add("Subtração: " + Convert.ToString(sub));
+            //listView1.Items.Add("");
+            //listView1.Items.Add("Produto: " + Convert.ToString(prod));
+            //listView1.Items.Add("");
+            //listView1.Items.Add("Divisão: " + Convert.ToString(div));
+            //listView1.Items.Add("");
+            //listView1.Items.Add("Média: " + Convert.ToString(media));
+            //listView1.Items.Add("");
 
         }
     }

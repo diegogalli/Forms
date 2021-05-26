@@ -48,7 +48,16 @@ namespace WindowsForms
             //string sobrenome = Microsoft.VisualBasic.Interaction.InputBox("Informe o sobrenome", "nome", "");
             //label1.Text = "Olá " + nome + " " +sobrenome + " Bem vindo";
 
+            string nome = Microsoft.VisualBasic.Interaction.InputBox("Informe o nome", "", "");
+            string sobrenome = Microsoft.VisualBasic.Interaction.InputBox("Informe o sobrenome", "", "");
+            string idade = Microsoft.VisualBasic.Interaction.InputBox("Informe a idade", "", "");
 
+            listView1.Items.Add(nome);
+            listView1.Items.Add("");
+            listView1.Items.Add(sobrenome);
+            listView1.Items.Add("");
+            listView1.Items.Add(idade);
+            listView1.Items.Add("");
         }
         
     }

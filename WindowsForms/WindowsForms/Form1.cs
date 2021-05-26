@@ -15,8 +15,16 @@ namespace WindowsForms
         public Form1()
         {
             InitializeComponent();
+        }
 
-            //teste 2
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            label1.Text = "Bem vindo DG Informática";
         }
     }
 }

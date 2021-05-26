@@ -120,35 +120,17 @@ namespace WindowsForms
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            float a = Convert.ToInt32(comboBox1.Text);
-            if (a == 1)
+            string escolha = comboBox1.Text;
+
+            if (escolha == "Primeiro")
             {
-                MessageBox.Show("Domingo");
+                radioButton1.Checked = true;
             }
-            else if (a == 2)
+            else
             {
-                MessageBox.Show("Segunda");
+                radioButton2.Checked = true;
             }
-            else if (a == 3)
-            {
-                MessageBox.Show("Terça");
-            }
-            else if (a == 4)
-            {
-                MessageBox.Show("Quarta");
-            }
-            else if (a == 5)
-            {
-                MessageBox.Show("Quinta");
-            }
-            else if (a == 6)
-            {
-                MessageBox.Show("Sexta");
-            }
-            else if (a == 7)
-            {
-                MessageBox.Show("Sábado");
-            }
+
         }
     }
 }

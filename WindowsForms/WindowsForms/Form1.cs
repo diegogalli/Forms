@@ -75,13 +75,6 @@ namespace WindowsForms
             //{
             //    label2.Text = "Boa noite";
             //}
-
-            for(int i = 1; i<= 10; i++)
-            {
-                listView1.Items.Add("Linha - " + Convert.ToString(i));
-                listView1.Items.Add("");
-            }
-            label1.Text = Convert.ToString(listView1.Items.Count / 2);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -123,6 +116,16 @@ namespace WindowsForms
 
         
         }
-        
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            float numero = Convert.ToInt32(textBox1.Text);
+            for (int i = 1; i <= numero; i++)
+            {
+                listView1.Items.Add("Linha - " + Convert.ToString(i));
+                listView1.Items.Add("");
+            }
+            label1.Text = Convert.ToString(listView1.Items.Count / 2);
+        }
     }
 }

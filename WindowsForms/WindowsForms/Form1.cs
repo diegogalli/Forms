@@ -28,10 +28,13 @@ namespace WindowsForms
             //Mensagem = "Bem vindo DG Informática";
             //label1.Text = Mensagem;
 
-            int hora = DateTime.Now.Hour;
-            int minuto = DateTime.Now.Minute;
+            //int hora = DateTime.Now.Hour;
+            //int minuto = DateTime.Now.Minute;
+            //label1.Text = hora + ":" + minuto;
 
-            label1.Text = hora + ":" + minuto;
+            string VarEscreve;
+            VarEscreve = "Teste de variavel";
+            MessageBox.Show(VarEscreve);
         }
     }
 }

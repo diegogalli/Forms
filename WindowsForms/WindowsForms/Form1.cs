@@ -102,20 +102,53 @@ namespace WindowsForms
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            string a = textBox1.Text;
-            string b = textBox2.Text;
+            //string a = textBox1.Text;
+            //string b = textBox2.Text;
             //float res = a / b;
-            //MessageBox.Show(Convert.ToString(res));
-            
-            if (a == b)
-            {
-                MessageBox.Show("Iguais");
-            }
-            else
-            {
-                MessageBox.Show("Diferentes");
-            }
+            //MessageBox.Show(Convert.ToString(res));            
+            //if (a == b)
+            //{
+            //    MessageBox.Show("Iguais");
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Diferentes");
+            //}
+
         
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            float a = Convert.ToInt32(comboBox1.Text);
+            if (a == 1)
+            {
+                MessageBox.Show("Domingo");
+            }
+            else if (a == 2)
+            {
+                MessageBox.Show("Segunda");
+            }
+            else if (a == 3)
+            {
+                MessageBox.Show("Terça");
+            }
+            else if (a == 4)
+            {
+                MessageBox.Show("Quarta");
+            }
+            else if (a == 5)
+            {
+                MessageBox.Show("Quinta");
+            }
+            else if (a == 6)
+            {
+                MessageBox.Show("Sexta");
+            }
+            else if (a == 7)
+            {
+                MessageBox.Show("Sábado");
+            }
         }
     }
 }

@@ -36,13 +36,28 @@ namespace WindowsForms
             //VarEscreve = "Teste de variavel";
             //MessageBox.Show(VarEscreve);
 
-            int[] numeros = new int[5];
-            numeros[0] = 1;
-            numeros[1] = 100;
-            numeros[2] = 200;
-            numeros[3] = 400;
-            numeros[4] = 800;
-            MessageBox.Show("Numero = " + numeros[3]);
+            //int[] numeros = new int[5];
+            //numeros[0] = 1;
+            //numeros[1] = 100;
+            //numeros[2] = 200;
+            //numeros[3] = 400;
+            //numeros[4] = 800;
+            //MessageBox.Show("Numero = " + numeros[3]);
+
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //float a = Convert.ToInt32(textBox1.Text);
+            //float b = Convert.ToInt32(textBox2.Text);
+            //float c = a + b;
+            //label1.Text = Convert.ToString(c);
         }
     }
 }

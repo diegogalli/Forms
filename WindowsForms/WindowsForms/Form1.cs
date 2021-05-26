@@ -104,16 +104,16 @@ namespace WindowsForms
         {
             float a = Convert.ToInt32(textBox1.Text);
             float b = Convert.ToInt32(textBox2.Text);
-            float sub = a - b;
+            float res = a / b;
 
-            MessageBox.Show(Convert.ToString(sub));
-            if (sub < 0)
+            MessageBox.Show(Convert.ToString(res));
+            if (a % b == 0)
             {
-                MessageBox.Show("Negativo");
+                MessageBox.Show("Divisiveis");
             }
             else
             {
-                MessageBox.Show("Positivo");
+                MessageBox.Show("Não divisiveis");
             }
         
         }

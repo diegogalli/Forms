@@ -45,7 +45,8 @@ namespace WindowsForms
             //MessageBox.Show("Numero = " + numeros[3]);
 
             string nome = Microsoft.VisualBasic.Interaction.InputBox("Informe o nome", "nome", "");
-            label1.Text = "Olá " + nome;
+            string sobrenome = Microsoft.VisualBasic.Interaction.InputBox("Informe o sobrenome", "nome", "");
+            label1.Text = "Olá " + nome + " " +sobrenome + " Bem vindo";
 
 
         }

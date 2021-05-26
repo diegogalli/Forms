@@ -78,10 +78,10 @@ namespace WindowsForms
 
             for(int i = 1; i<= 10; i++)
             {
-                listView1.Items.Add("Olá meu jovem!");
+                listView1.Items.Add("Linha - " + Convert.ToString(i));
                 listView1.Items.Add("");
             }
-
+            label1.Text = Convert.ToString(listView1.Items.Count / 2);
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -107,13 +107,13 @@ namespace WindowsForms
             //float res = a / b;
             //MessageBox.Show(Convert.ToString(res));
             float a = Convert.ToInt32(textBox1.Text);
-            if (a % 2 == 0)
+            if (a >= 18)
             {
-                MessageBox.Show("Par");
+                MessageBox.Show("Pode tirar a CNH");
             }
             else
             {
-                MessageBox.Show("Impar");
+                MessageBox.Show("Espera aí né jovem!");
             }
         
         }

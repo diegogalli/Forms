@@ -44,24 +44,12 @@ namespace WindowsForms
             //numeros[4] = 800;
             //MessageBox.Show("Numero = " + numeros[3]);
 
-            string nome = Microsoft.VisualBasic.Interaction.InputBox("Informe o nome", "nome", "");
-            string sobrenome = Microsoft.VisualBasic.Interaction.InputBox("Informe o sobrenome", "nome", "");
-            label1.Text = "Olá " + nome + " " +sobrenome + " Bem vindo";
+            //string nome = Microsoft.VisualBasic.Interaction.InputBox("Informe o nome", "nome", "");
+            //string sobrenome = Microsoft.VisualBasic.Interaction.InputBox("Informe o sobrenome", "nome", "");
+            //label1.Text = "Olá " + nome + " " +sobrenome + " Bem vindo";
 
 
         }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            //float a = Convert.ToInt32(textBox1.Text);
-            //float b = Convert.ToInt32(textBox2.Text);
-            //float c = a + b;
-            //label1.Text = Convert.ToString(c);
-        }
+        
     }
 }

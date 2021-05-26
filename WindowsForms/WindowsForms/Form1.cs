@@ -23,8 +23,10 @@ namespace WindowsForms
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        {
-            label1.Text = "Bem vindo DG Informática";
+        {           
+            String Mensagem;
+            Mensagem = "Bem vindo DG Informática";
+            label1.Text = Mensagem;
         }
     }
 }

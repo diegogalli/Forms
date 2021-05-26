@@ -32,9 +32,17 @@ namespace WindowsForms
             //int minuto = DateTime.Now.Minute;
             //label1.Text = hora + ":" + minuto;
 
-            string VarEscreve;
-            VarEscreve = "Teste de variavel";
-            MessageBox.Show(VarEscreve);
+            //string VarEscreve;
+            //VarEscreve = "Teste de variavel";
+            //MessageBox.Show(VarEscreve);
+
+            int[] numeros = new int[5];
+            numeros[0] = 1;
+            numeros[1] = 100;
+            numeros[2] = 200;
+            numeros[3] = 400;
+            numeros[4] = 800;
+            MessageBox.Show("Numero = " + numeros[3]);
         }
     }
 }

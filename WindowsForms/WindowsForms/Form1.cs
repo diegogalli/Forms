@@ -76,6 +76,12 @@ namespace WindowsForms
             //    label2.Text = "Boa noite";
             //}
 
+            for(int i = 1; i<= 10; i++)
+            {
+                listView1.Items.Add("Olá meu jovem!");
+                listView1.Items.Add("");
+            }
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -117,20 +123,6 @@ namespace WindowsForms
 
         
         }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            string escolha = comboBox1.Text;
-
-            if (escolha == "Primeiro")
-            {
-                radioButton1.Checked = true;
-            }
-            else
-            {
-                radioButton2.Checked = true;
-            }
-
-        }
+        
     }
 }

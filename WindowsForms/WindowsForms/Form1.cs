@@ -102,18 +102,18 @@ namespace WindowsForms
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            float a = Convert.ToInt32(textBox1.Text);
-            float b = Convert.ToInt32(textBox2.Text);
-            float res = a / b;
 
-            MessageBox.Show(Convert.ToString(res));
-            if (a % b == 0)
+            //float b = Convert.ToInt32(textBox2.Text);
+            //float res = a / b;
+            //MessageBox.Show(Convert.ToString(res));
+            float a = Convert.ToInt32(textBox1.Text);
+            if (a % 2 == 0)
             {
-                MessageBox.Show("Divisiveis");
+                MessageBox.Show("Par");
             }
             else
             {
-                MessageBox.Show("Não divisiveis");
+                MessageBox.Show("Impar");
             }
         
         }

@@ -59,22 +59,22 @@ namespace WindowsForms
             //listView1.Items.Add(idade);
             //listView1.Items.Add("");
 
-            int hora = DateTime.Now.Hour;
-            int minuto = DateTime.Now.Minute;
+            //int hora = DateTime.Now.Hour;
+            //int minuto = DateTime.Now.Minute;
 
-            label1.Text = hora + ":" + minuto;
-            if (hora < 12)
-            {
-                label2.Text = "Bom dia";
-            }
-            else if (hora >= 12 && hora < 18)
-            {
-                label2.Text = "Boa tarde";
-            }
-            else if (hora >= 18)
-            {
-                label2.Text = "Boa noite";
-            }
+            //label1.Text = hora + ":" + minuto;
+            //if (hora < 12)
+            //{
+            //    label2.Text = "Bom dia";
+            //}
+            //else if (hora >= 12 && hora < 18)
+            //{
+            //    label2.Text = "Boa tarde";
+            //}
+            //else if (hora >= 18)
+            //{
+            //    label2.Text = "Boa noite";
+            //}
 
         }
 
@@ -98,6 +98,24 @@ namespace WindowsForms
             //listView1.Items.Add("Média: " + Convert.ToString(media));
             //listView1.Items.Add("");
 
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            float a = Convert.ToInt32(textBox1.Text);
+            float b = Convert.ToInt32(textBox2.Text);
+            float sub = a - b;
+
+            MessageBox.Show(Convert.ToString(sub));
+            if (sub < 0)
+            {
+                MessageBox.Show("Negativo");
+            }
+            else
+            {
+                MessageBox.Show("Positivo");
+            }
+        
         }
     }
 }

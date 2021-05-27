@@ -26,8 +26,14 @@ namespace Revisao
             int qtde = Convert.ToInt32(Microsoft.VisualBasic.Interaction.InputBox("Entre com a quantidade de alunos: "));
             for (int i = 1; i <= qtde; i++)
             {
+                string nome = Microsoft.VisualBasic.Interaction.InputBox("Entre com o seu nome: ","","");
+                int nota = Convert.ToInt32(Microsoft.VisualBasic.Interaction.InputBox("Entre com a sua nota: ","",""));
+                listView1.Items.Add(nome + "--" + Convert.ToString(nota));
+                listView1.Items.Add("");
 
             }
+            label1.Text = "Quantidade de notas digitadas";
+            label2.Text = Convert.ToString(listView1.Items.Count / 2);
 
         }
     }

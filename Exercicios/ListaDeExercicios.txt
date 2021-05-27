@@ -1,0 +1,8 @@
+ListaDeExercicios
+
+1 - Fazer um programa que leia dois valores e calcule a soma entre eles
+2 - Fazer um programa que calcule a area de um quadrado. Onde o usuario informa ao lado ao programa
+3 - Fazer um programa que calcule o quadrado de um numero
+4 - Fazer um programa que calcule a areaa do trapezio
+5 - Fazer um programa que calcule a area do retangulo
+6 - Fazer um programa que imprima uma tabuada informada pelo o usuario
